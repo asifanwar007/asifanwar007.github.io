@@ -215,14 +215,18 @@ SECTION WRAPS
   color: white;
 }
 
+
 #footwrap {
   background: #2f2f2f;
   padding-top: 50px;
-  padding-bottom: 50px;
+  padding-bottom:40px;
+  border-top: 3px solid green;
+  border-bottom: 1px solid green;
 }
 
 #footwrap p {
   color: white;
+  padding-left: 25px;
 }
 
 #footwrap h5 {
@@ -251,6 +255,16 @@ SECTION WRAPS
 #copyrights p {
   margin: 0 0 5px 0;
 }
+#footwrap #p{
+  color: #00c4ff;
+  font-weight: 550;
+}
+
+span{
+  font-size: 18px;
+  border-bottom:2px solid #ff5483;
+  font-weight: 300;
+}
 
 .credits {
   color: #999;
@@ -272,78 +286,27 @@ SECTION WRAPS
 }
 
 .desc imp {
-  padding: 6px;
-  color: white;
-  background: #34495e;
+ padding: 8px;
+    color: #fff0f0;
+    background: #34495e;
+    border-radius: 5px;
 }
 
 .desc more {
-  color: #95a5a6;
+  color: #010202;
 }
 
 sm {
-  font-size: 12px;
+  font-size: 14px;
+}
+.container{
+  width: 1007px;
 }
 
 /* Contact Form */
 
-.contact-form label {
-  color: #999;
-}
 
-.contact-form input, .contact-form textarea {
-  padding: 10px 12px;
-  border-radius: 0;
-  box-shadow: none;
-  font-size: 14px;
-  height: auto;
-}
 
-.contact-form .form-send {
-  text-align: center;
-}
-
-.contact-form .form-send button {
-  background: #44bbaa;
-  border: 0;
-  padding: 10px 30px;
-  color: #fff;
-  transition: 0.4s;
-  cursor: pointer;
-}
-
-.contact-form .form-send button:hover {
-  background: #23c8b1;
-}
-
-.contact-form .validate {
-  display: none;
-  color: red;
-  margin: 0 0 15px 0;
-  font-weight: 400;
-  font-size: 13px;
-}
-
-.contact-form .loading {
-  display: none;
-  color: #555;
-  background: #fff;
-  text-align: center;
-  padding: 15px;
-  margin: 15px 0;
-}
-
-.contact-form .loading:before {
-  content: "";
-  display: inline-block;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  border: 3px solid #18d26e;
-  border-top-color: #eee;
-  -webkit-animation: animate-loading 1s linear infinite;
-  animation: animate-loading 1s linear infinite;
-}
 
 @-webkit-keyframes animate-loading {
   0% {
@@ -369,22 +332,3 @@ sm {
   }
 }
 
-.contact-form .error-message {
-  display: none;
-  color: #fff;
-  background: #ed3c0d;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-  margin: 15px 0;
-}
-
-.contact-form .sent-message {
-  display: none;
-  color: #fff;
-  background: #18d26e;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-  margin: 15px 0;
-}
