@@ -152,6 +152,17 @@ By default, top navigation bar uses "fixed" position
 /*---------------------------------------------------
 SECTION WRAPS
 ---------------------------------------------------*/
+/*Image Wrap*/
+#test_replacement {
+    width: 200px; //must be the size of your image (and the replacement one)
+    height: 300px; //idem
+    display: block;
+}
+#test_replacement:hover {
+    box-sizing: border-box;
+    background-image: url('somewhere/other_image.png');
+    padding-left: 200px; //at least the size of the width
+}
 
 /* Header Wrap */
 
@@ -192,16 +203,31 @@ SECTION WRAPS
 }
 #headerwrap div
 {
-  width: 80%;
+  width: 100%;
+  height: 400px;
   background: #EB3349;  /* fallback for old browsers */
-background: -webkit-linear-gradient(0deg,black,white, black);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(0deg,black,white, black); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: -webkit-linear-gradient(0deg,black,white, black);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(0deg,black,white, black); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-  padding-left: 95px;
-  padding-right: 95px;
+  background-attachment: relative;
+  background-position: center center;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-left: 60px;
+  /*padding-right: 95px;*/
   text-align: center;
- padding-top: 7%;
+ padding-top: 3%;
 
+ }
+ #headerwrap div img
+ {
+  border:3px solid green;
  }
  #headerwrap div h1
  {
