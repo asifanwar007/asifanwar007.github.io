@@ -243,6 +243,7 @@ SECTION WRAPS
   font-family: "Share script=latin rev=3";
     font-size: 25px;
     font-style: normal;
+    /*border: 1px solid red;*/
     /*line-height: 1.10909;*/
 }
 
@@ -325,7 +326,7 @@ SECTION WRAPS
 span{
   font-size: 18px;
   border-bottom:2px solid #ff5483;
-  font-weight: 300;
+  font-weight: 450;
 }
 
 .credits {
